@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Collections;
 using System.Collections.Generic;
 
 namespace RemoveDuplicates1
@@ -28,7 +28,7 @@ namespace RemoveDuplicates1
     
 
         public static LinkedList<int> RemoveDuplicate (LinkedList<int> list){
-            Dictionary<int, int> buffer = new Dictionary<int,int>();
+            Hashtable buffer = new Hashtable();
             LinkedList<int> listResult = new LinkedList<int>();
             if(list.Count <= 1)
               return list;

@@ -46,7 +46,7 @@ namespace RemoveDuplicates1
                 nodePrevious = node.Previous;
                 nodeNext =  node.Next;
                 if (nodeNext != null) {
-                  list.Remove(node.Next);
+                  list.Remove(nodeNext);
                   list.AddAfter(nodePrevious, nodeNext);
                 }
                 list.Remove(node);
